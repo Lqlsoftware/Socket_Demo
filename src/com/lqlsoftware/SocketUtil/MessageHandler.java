@@ -1,7 +1,7 @@
 package com.lqlsoftware.SocketUtil;
 
 /*
- * ÏûÏ¢´¦ÀíÀà½Ó¿Ú 
+ * æ¶ˆæ¯å¤„ç†ç±»
  */
 public interface MessageHandler {
     public void onReceive(Connection connection, String message);
