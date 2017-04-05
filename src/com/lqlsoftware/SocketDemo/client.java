@@ -8,15 +8,16 @@ import com.lqlsoftware.SocketUtil.Server;
 
 public class client {
     public static void main(String[] args) throws IOException {
-        // ¿Í»§¶ËÏò·şÎñÆ÷·¢ËÍÇëÇó
+        // å®¢æˆ·ç«¯å‘æœåŠ¡å™¨å‘é€è¯·æ±‚
         Client client = new Client(InetAddress.getLocalHost(), 5556);
-        // ·¢ËÍÏûÏ¢
+        // å¯†é’¥éªŒè¯
         client.println("123456");
-        client.println("fuck");
-        // ½ÓÊÕÏûÏ¢
+        // å‘é€æ¶ˆæ¯
+        client.println("è¿æ¥æˆåŠŸ");
+        // æ¥æ”¶æ¶ˆæ¯
         System.out.println(client.readLine());
         
-        // ¹Ø±ÕÁ¬½Ó
+        // å…³é—­è¿æ¥
         client.close();
     }
 }
